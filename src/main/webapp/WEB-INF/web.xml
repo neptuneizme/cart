@@ -7,9 +7,17 @@
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>murach.cart.cart.CartServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>murach.cart.cart.ProductsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
         <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/loadProducts</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
@@ -17,9 +25,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>
-            index.jsp
-        </welcome-file>
+        <welcome-file>loadProducts</welcome-file>
     </welcome-file-list>
 
 </web-app>
